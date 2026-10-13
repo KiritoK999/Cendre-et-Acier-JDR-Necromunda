@@ -8,9 +8,9 @@ Cendre & Acier est un projet de jeu de rôle inspiré de l'univers de Necromunda
 - **classes.html** : présentation des classes de personnages.
 - **peuples.html** : présentation des différents peuples.
 - **equipement.html** : informations sur les armes et les équipements.
-- **dangers.html** : présentation des dangers et des menaces.
+- **dangers.html** : présentation des dangers du jeu.
 - **regles.html** : règles et mécaniques du jeu.
-- **historiques.html** : contexte historique et éléments narratifs.
+- **historiques.html** : présentation des historiques de personnages.
 - **style.css** : feuille de style utilisée pour la mise en forme du site.
 - **favicon.png** : icône du site.
 
