@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CENDRES & ACIER — Partie V : armes, armures, drogues et cybernétique. Partie VI : pouvoirs psychiques, mutations et corruption.">
+    <title>Équipement & Psychisme — CENDRES & ACIER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hazard-top"></div>
+
+    <header class="site">
+        <div class="titre-site">
+            <span class="sigille">C&A</span>
+            <h1>Cendres & Acier</h1>
+        </div>
+        <div class="sous-titre">Partie V — Équipement · Partie VI — Psychisme, mutations et corruption</div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="regles.html">Règles de base</a></li>
+                <li><a href="peuples.html">Peuples</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="historiques.html">Ancrages</a></li>
+                <li><a href="equipement.html" class="actif">Équipement</a></li>
+                <li><a href="dangers.html">Dangers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="citation">
+                « L'arme est rare. La munition est chère. Le reste, tu le fabriques. »
+                <span class="attribution">— Soudeur de la décharge 14</span>
+            </div>
+            <div class="panier">
+                Les prix sont en <span class="nom">crédits (¢)</span>. <span class="nom">Rareté (R)</span> : 0 = omniprésent · 1 = marchés de guildes · 2 = boutiques spécialisées · 3 = contact dos-au-mur · 4 = faveur de Maison · 5 = quasi-introuvable. Certaines armes exigent une <span class="nom">licence de Guilde</span>.
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">5.1</span> Armes de corps-à-corps</h2>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Armes de corps-à-corps</caption>
+                    <thead>
+                        <tr><th>Arme</th><th>Prix</th><th>Dégâts</th><th>Propriétés</th><th>R</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Couteau de fossé</td><td class="prix">5 ¢</td><td>1d4</td><td>Légère, lancer (4/12)</td><td>0</td></tr>
+                        <tr><td>Pic de mineur</td><td class="prix">8 ¢</td><td>1d6</td><td>Perce</td><td>0</td></tr>
+                        <tr><td>Barre de levier aiguisée</td><td class="prix">10 ¢</td><td>1d6</td><td>Improvisable, brise-portes</td><td>0</td></tr>
+                        <tr><td>Lance de conduit</td><td class="prix">10 ¢</td><td>1d6</td><td>Allonge, lancer (4/12)</td><td>0</td></tr>
+                        <tr><td>Matraque de maintien de l'ordre</td><td class="prix">10 ¢</td><td>1d6</td><td>Renverse sur critique</td><td>0</td></tr>
+                        <tr><td>Machette d'abordage</td><td class="prix">15 ¢</td><td>1d6</td><td>Légère, coupe les cordages</td><td>0</td></tr>
+                        <tr><td>Dague de verre (silice)</td><td class="prix">15 ¢</td><td>1d4</td><td>Furtive</td><td>1</td></tr>
+                        <tr><td>Griffe de fosse</td><td class="prix">20 ¢</td><td>1d6</td><td>Légère, escalade sans test</td><td>1</td></tr>
+                        <tr><td>Faux de récolte</td><td class="prix">20 ¢</td><td>1d8</td><td>Deux mains, fauder (Écorcheur)</td><td>0</td></tr>
+                        <tr><td>Épée-couteau de sergent</td><td class="prix">25 ¢</td><td>1d8</td><td>Légère</td><td>1</td></tr>
+                        <tr><td>Fouet à dards</td><td class="prix">25 ¢</td><td>1d6</td><td>Portée 2", Entrave (action bonus)</td><td>2</td></tr>
+                        <tr><td>Broie-côtes (couteau double)</td><td class="prix">30 ¢</td><td>1d6</td><td>+1d4 contre cible agrippée ou entravée</td><td>1</td></tr>
+                        <tr><td>Masse de chantier</td><td class="prix">30 ¢</td><td>1d10</td><td>Lourde, brise-machines</td><td>1</td></tr>
+                        <tr><td>Chaîne lestée</td><td class="prix">35 ¢</td><td>1d8</td><td>Renverse (JS FOR DD 12)</td><td>1</td></tr>
+                        <tr><td>Hallebarde de Défense Civile</td><td class="prix">45 ¢</td><td>1d10</td><td>Allonge, deux mains, Renverse (JS FOR DD 13)</td><td>1</td></tr>
+                        <tr><td>Hache de guerre de Défense Civile</td><td class="prix">50 ¢</td><td>1d12</td><td>Lourde, deux mains, brise-portes</td><td>1</td></tr>
+                        <tr><td>Tronçonneuse d'abattoir</td><td class="prix">60 ¢</td><td>2d6</td><td>Deux mains, Carburant (5 attaques)</td><td>1</td></tr>
+                        <tr><td>Épée de parade de Guilde</td><td class="prix">60 ¢</td><td>1d8</td><td>Désarmement</td><td>2</td></tr>
+                        <tr><td>Fleuret d'escrime de salle</td><td class="prix">80 ¢</td><td>1d8</td><td>Légère, +2 JS DEX en duel</td><td>2</td></tr>
+                        <tr><td>Marteau sismique de chantier</td><td class="prix">90 ¢</td><td>2d8</td><td>Lourde, deux mains, Renverse (JS FOR DD 14), brise-machines</td><td>2</td></tr>
+                        <tr><td>Lame cérémonielle psychique</td><td class="prix">100 ¢</td><td>1d6</td><td>Focus</td><td>3</td></tr>
+                        <tr><td>Lame énergétique de Guilde</td><td class="prix">150 ¢</td><td>1d8 + 1d4 radiant</td><td>Énergétique (cellule 10)</td><td>3</td></tr>
+                        <tr><td>Hache énergétique de guerre</td><td class="prix">250 ¢</td><td>1d12 + 1d6 radiant</td><td>Deux mains, Énergétique (cellule 10) — licence</td><td>3</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">5.2</span> Armes à distance</h2>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Armes à distance</caption>
+                    <thead>
+                        <tr><th>Arme</th><th>Prix</th><th>Dégâts</th><th>Portée</th><th>Munitions</th><th>Propriétés</th><th>R</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Fronde de chantier</td><td class="prix">2 ¢</td><td>1d4</td><td>8/24</td><td>Gravats</td><td>Légère</td><td>0</td></tr>
+                        <tr><td>Arbalète de conduits</td><td class="prix">25 ¢</td><td>1d8</td><td>13/40</td><td>Carreaux</td><td>Silencieuse</td><td>1</td></tr>
+                        <tr><td>Pistolet à clous de chantier</td><td class="prix">30 ¢</td><td>1d6</td><td>8/24</td><td>Clous (20)</td><td>Perce</td><td>1</td></tr>
+                        <tr><td>Pistolet de poche</td><td class="prix">35 ¢</td><td>1d6</td><td>10/30</td><td>Chargeur 6</td><td>Légère, Furtive</td><td>1</td></tr>
+                        <tr><td>Pistolet à poudre (réplique)</td><td class="prix">40 ¢</td><td>1d8</td><td>10/30</td><td>6 charges</td><td>Bruyante</td><td>1</td></tr>
+                        <tr><td>Canon-grappe (harpon)</td><td class="prix">60 ¢</td><td>1d6</td><td>10/30</td><td>Carreaux</td><td>Grappe</td ><td >1</td>
+                        <tr><td>Carabine du guetteur</td><td class="prix">70 ¢</td><td>1d10</td><td>40/120</td><td>Chargeur 2</td><td>Précision</td><td>1</td></tr>
+                        <tr><td>Fusil à canon scié</td><td class="prix">80 ¢</td><td>2d6</td><td>6/18</td><td>2 cartouches</td><td>Deux mains, Zone (2 cibles à 2")</td><td>1</td></tr>
+                        <tr><td>Pistolet laser de contrebande</td><td class="prix">90 ¢</td><td>1d8 radiant</td><td>15/45</td><td>Cellule 20</td><td>Énergétique, Légère</td><td>2</td></tr>
+                        <tr><td>Mitraillette de poche « Ronron »</td><td class="prix">100 ¢</td><td>1d6</td><td>10/30</td><td>Chargeur 12</td><td>Automatique, Bruyante</td><td>2</td></tr>
+                        <tr><td>Fusil à levier de caravane</td><td class="prix">120 ¢</td><td>2d4</td><td>27/80</td><td>Chargeur 8</td><td>Équilibré</td><td>2</td></tr>
+                        <tr><td>Arbalète lourde de siège</td><td class="prix">180 ¢</td><td>2d6</td><td>20/60</td><td>Carreaux</td><td>Lourde, Trépied, Renverse (JS FOR DD 14)</td><td>2</td></tr>
+                        <tr><td>Fusil à pompe anti-émeute</td><td class="prix">200 ¢</td><td>2d8</td><td>10/30</td><td>5 cartouches</td><td>Renverse (2" ou moins)</td ><td>2</td >
+                        <tr><td>Lance-grenades de tranchée</td><td class="prix">220 ¢</td><td>Voir 5.3</td><td>20/60</td><td>5 grenades</td><td>Zone, risque de rupture (1 sur d6)</td><td>3</td></tr>
+                        <tr><td>Lance-flamme de bricolage</td><td class="prix">250 ¢</td><td>3d6 feu</td><td>Cône 4"</td><td>Réservoir 3</td><td>Deux mains, Lourde, Précision — licence</td><td>3</td></tr>
+                        <tr><td>Fusil de précision « Œil-du-Vide »</td><td class="prix">300 ¢</td><td>2d10</td><td>100/300</td><td>Chargeur 3</td><td>Deux mains, Lourde, Précision — licence</td><td>3</td></tr>
+                        <tr><td>Fusil automatique de fosse</td><td class="prix">400 ¢</td><td>1d10</td><td>20/60</td><td>Chargeur 20</td><td>Automatique — licence</td><td>3</td></tr>
+                        <tr><td>Canon laser de contrebande</td><td class="prix">450 ¢</td><td>2d6 radiant</td><td>40/120</td><td>Cellule 10</td><td>Énergétique</td><td>3</td></tr>
+                        <tr><td>Fusil à plasma de contrebande</td><td class="prix">550 ¢</td><td>3d10 radiant</td><td>20/60</td><td>Cellule 5</td><td>Deux mains, Énergétique, Zone (cible + 1 adjacent) — licence</td><td>4</td></tr>
+                        <tr><td>Fusil-roquette « Brise-Bunker »</td><td class="prix">650 ¢</td><td>6d6</td><td>30/90</td><td>1 roquette</td><td>Deux mains, Lourde, Zone (rayon 2"), Anti-véhicule — licence</td><td>4</ td >
+                        <tr><td>Mitrailleuse d'épaule « Taon »</td><td class="prix">700 ¢</td><td>2d8</td><td>30/90</td><td>Chargeur 40</td><td>Automatique, Lourde — licence</td><td>4</td></tr>
+                        <tr><td>Long-Las de Couvre-Mur</td><td class="prix">750 ¢</td><td>3d8 radiant</td><td>120/360</td><td>Cellule 5</td><td>Deux mains, Lourde, Précision, Énergétique — licence</td><td>4</td></tr>
+                        <tr><td>Lascannon de Couvre-Mur</td><td class="prix">1 500 ¢</td><td>4d10 radiant</td><td>80/240</td><td>Cellule 3</td><td>Lourde, Trépied, Énergétique — licence</td><td>5</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Munitions et accessoires</caption>
+                    <thead>
+                        <tr><th>Munition / accessoire</th><th>Prix</th><th>R</th><th>Note</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Chargeur standard</td><td class="prix">5 ¢</td><td>0</td><td>Recharge standard</td></tr>
+                        <tr><td>Cartouches</td><td class="prix">2 ¢/pce</td><td>0</td><td>Fusils à pompe et canons sciés</td></tr>
+                        <tr><td>Cellule énergétique</td><td class="prix">20 ¢</td><td>1</td><td>Armes énergétiques</td></tr>
+                        <tr><td>Carreaux</td><td class="prix">1 ¢/pce</td><td>0</td><td>Arbalètes</td></tr>
+                        <tr><td>Clous</td><td class="prix">5 ¢/20</td><td>0</td><td>Pistolet à clous</td></tr>
+                        <tr><td>Roquette</td><td class="prix">30 ¢</td><td>3</t><td>« Brise-Bunker »</td></tr>
+                        <tr><td>Silencieux artisanal</td><td class="prix">40 ¢</td><td>2</td><td>Annule Bruyante</td></tr>
+                        <tr><td>Lunette de précision</td><td class="prix">60 ¢</td><td>2</td><td>+visée à longue portée</td></tr>
+                        <tr><td>Baïonnette</td><td class="prix">10 ¢</td><td>0</td><td>1d4 intégré au fusil</td></tr>
+                        <tr><td>Bandoulière</td><td class="prix">15 ¢</td><td>0</td><td>Recharge en action bonus</td></tr>
+                        <tr><td>Trépied</td><td class="prix">25 ¢</td><td>1</td><td>Annule Lourde en position</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">5.3</span> Grenades</h2>
+            <div class="panier">
+                Une grenade se lance en une action : jet d'ATT à distance si elle vise une créature, ou point d'impact au choix du lanceur dans un rayon de 4". Le lance-grenades de tranchée (5.2) propulse n'importe quelle grenade de cette table à 20/60.
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Grenades et explosifs</caption>
+                    <thead>
+                        <tr><th>Objet</th><th>Prix</th><th>Effet</th><th>R</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Grenade fumigène</td><td class="prix">10 ¢</td><td>Nuage 4" pendant 2 rounds ; tir à travers : désavantage</td><td>0</td></tr>
+                        <tr><td>Colle de décharge</td><td class="prix">15 ¢</td><td>Zone 2" : JS DEX ou immobilisé 1 round</td><td>1</td></tr>
+                        <tr><td>Grenade incendiaire</td><td class="prix">20 ¢</td><td>Rayon 2" : 2d6 feu, zone embrasée 1 round supplémentaire (1d6)</td><td>1</td></tr>
+                        <tr><td>Grenade de tranchée (frag)</td><td class="prix">25 ¢</td><td>Rayon 2" : 2d6, JS DEX demi</td><td>1</td></tr>
+                        <tr><td>Grenade à charge creuse</td><td class="prix">40 ¢</td><td>Cible unique ou véhicule : 3d6, dégâts doublés contre véhicules et constructs</td><td>2</td></tr>
+                        <tr><td>Grenade à impulsion</td><td class="prix">60 ¢</td><td>Rayon 3" : 4d6 contondant, JS DEX demi, Renverse (JS FOR DD 14)</td><td>2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">5.4</span> Propriétés des armes</h2>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Propriétés des armes</caption>
+                    <thead>
+                        <tr><th>Propriété</th><th>Effet</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="cle-mut">Légère</td><td>Se manie d'une seule main ; l'autre main reste libre (bouclier, torche, grappin) sans malus</td></tr>
+                        <tr><td class="cle-mut">Lourde</td><td>Exige FOR 12 ; en dessous, jets d'ATT à désavantage. Un trépied de tir annule ce malus en position statique</td></tr>
+                        <tr><td class="cle-mut">Deux mains</td><td>Occupe les deux mains ; incompatible avec un objet tenu ou un bouclier de conteneur</td></tr>
+                        <tr><td class="cle-mut">Improvisable</td><td>Tout objet similaire (barre, tuyau, débris) fonctionne avec les mêmes statistiques ; récupérable gratuitement sur n'importe quel chantier</td></tr>
+                        <tr><td class="cle-mut">Lancer (p/p)</td><td>Arme de CaC projetable aux portées indiquées ; après le lancer, l'arme tombe au pied de la cible</td></tr>
+                        <tr><td class="cle-mut">Allonge</td><td>La frappe porte à 2" : attaquez sans entrer à portée des armes de CaC standard</td></tr>
+                        <tr><td class="cle-mut">Perce</td><td>Ignore le demi-couvert de paroi (plaque, muret fin) ; les trois-quarts couvert restent efficaces</td></tr>
+                        <tr><td class="cle-mut">Furtive</td><td>Indétectable aux fouilles simples ; passe les contrôles sans test</td></tr>
+                        <tr><td class="cle-mut">Silencieuse</td><td>Le tir ne déclenche pas l'alerte ; impossible de localiser le tireur au bruit</td></tr>
+                        <tr><td class="cle-mut">Bruyante</td><td>Le tir s'entend à 30' (et bien plus loin dans les conduits) ; l'alerte est donnée, le MR peut tirer une rencontre</td></tr>
+                        <tr><td class="cle-mut">Automatique</td><td>Dépensez 2 munitions supplémentaires pour +1 dé de dégâts sur une attaque (tir nourri)</td></tr>
+                        <tr><td class="cle-mut">Zone</td><td>Le tir touche toutes les cibles dans l'espace indiqué ; JS DEX pour subir la moitié des dégâts</td></tr>
+                        <tr><td class="cle-mut">Énergétique</td><td>Munitionnée par cellule ; après chaque attaque, lancez 1d4 : sur 1, l'arme surchauffe (inutilisable jusqu'à refroidissement)</td></tr>
+                        <tr><td class="cle-mut">Trépied</td><td>Arme d'emplacement : installer ou décrocher = 1 action ; tant qu'elle tire, le tireur ne se déplace pas</td></tr>
+                        <tr><td class="cle-mut">Carburant</td><td>Réservoir limité (nombre d'attaques indiqué) ; recharger = 1 action + 1 charge de carburant (5 ¢)</td></tr>
+                        <tr><td class="cle-mut">Grappe</td><td>Tire un filin de 10" : hissez l'utilisateur vers le point d'ancrage (déplacement gratuit) ou arrachez une cible (JS FOR DD 12)</td></tr>
+                        <tr><td class="cle-mut">Équilibré</td><td>+1 aux jets d'ATT à bord d'un véhicule en mouvement</td></tr>
+                        <tr><td class="cle-mut">Précision</td><td>Si vous ne vous êtes pas déplacé depuis votre dernier tour : +2 aux jets d'ATT, et les critiques portent sur 19–20</td></tr>
+                        <tr><td class="cle-mut">Renverse</td><td>Sur un coup qui touche : la cible fait un JS de FOR (DD indiqué) ou tombe à terre ; se relever coûte la moitié de sa vitesse</td></tr>
+                        <tr><td class="cle-mut">Entrave</td><td>Sur un coup qui touche : la cible est entravée (vitesse 0, désavantage aux jets d'ATT) ; se libérer = 1 action</td></tr>
+                        <tr><td class="cle-mut">Désarmement</td><td>Sur un coup qui touche : JS de DEX DD 13 ou la cible lâche son arme (au sol à ses pieds)</td></tr>
+                        <tr><td class="cle-mut">Brise-portes</td><td>+2 aux jets de FOR pour enfoncer portes, grilles et serrures bloquées</td></tr>
+                        <tr><td class="cle-mut">Brise-machines</td><td>+2 aux dégâts contre les constructs, drones et véhicules</td></tr>
+                        <tr><td class="cle-mut">Anti-véhicule</td><td>Dégâts doublés contre véhicules et constructs ; ignore la moitié de la CA des fortifications (bunker, porte blindée)</td></tr>
+                        <tr><td class="cle-mut">Focus</td><td>Canal psychique : un porteur de pouvoirs qui tient cette arme ajoute +1d4 dégâts psychiques à ses pouvoirs et attaques</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">5.5</span> Armures</h2>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Armures</caption>
+                    <thead>
+                        <tr><th>Armure</th><th>Prix</th><th>CA</th><th>Force min</th><th>Discrétion</th><th>R</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Veste de chiffons matriciés</td><td class="prix">10 ¢</td><td>11 + DEX</td><td>—</td><td>—</td><td>0</td></tr>
+                        <tr><td>Cuir matricé (scaphandre de chantier)</td><td class="prix">45 ¢</td><td>12 + DEX (max +2)</td><td>—</td><td>—</td><td>1</td></tr>
+                        <tr><td>Gilet de plaques de décharge</td><td class="prix">100 ¢</td><td>14 + DEX (max +2)</td><td>—</td><td>Désavantage</td><td>2</td></tr>
+                        <tr><td>Cotte de mailles de Guilde</td><td class="prix">150 ¢</td><td>15</td><td>FOR 12</td><td>Désavantage</td><td>2</td></tr>
+                        <tr><td>Exo-plastron de guerre (Technoprêtre)</td><td class="prix">400 ¢</td><td>16</td><td>FOR 13</td><td>Désavantage</td><td>3</td></tr>
+                        <tr><td>Bouclier de conteneur (plaque de blindage portable)</td><td class="prix">40 ¢</td><td>+2</td><td>—</td><td>—</td><td>1</td></tr>
+                        <tr><td>Cache-masque à filtre</td><td class="prix">30 ¢</td><td>—</td><td>—</td><td>—</td><td>1 (immunise aux gaz DD 12–)</td></tr>
+                        <tr><td>Carapace de combat intégrale</td><td class="prix">1 200 ¢</td><td>18</td><td>FOR 15</td><td>Désavantage</td><td>4 (licence)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">5.6</span> Objets spéciaux</h2>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Objets spéciaux, drogues et stimulants</caption>
+                    <thead>
+                        <tr><th>Objet</th><th>Prix</th><th>Effet</th><th>R</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Lampe-chapeau</td><td class="prix">5 ¢</td><td>Lumière 6", 8 h d'huile</td><td>0</td></tr>
+                        <tr><td>Ration de champignons</td><td class="prix">1 ¢</td><td>1 repas</td><td>0</td></tr>
+                        <tr><td>Eau filtrée (gourde)</td><td class="prix">2 ¢</td><td>1 jour d'hydratation</td><td>0</td></tr>
+                        <tr><td>Filtre à air (recharge)</td><td class="prix">15 ¢</td><td>Immunité aux gaz pendant 1 h</td><td>1</td></tr>
+                        <tr><td>Grappin et filin</td><td class="prix">25 ¢</td><td>Escalade 10"</td><td>1</td></tr>
+                        <tr><td>Kit de médecin de campagne</td><td class="prix">50 ¢</td><td>Stabilise un mourant, +2 aux soins</td><td>1</td></tr>
+                        <tr><td>Troubadour des niveaux</td><td class="prix">10 ¢</td><td>Avantage sur 1 JS (brûlé)</td><td>1</td></tr>
+                        <tr><td>Stimm de combat</td><td class="prix">40 ¢</td><td>Action bonus : +2d4 PV, +2 DEX pendant 1 min ; puis épuisement 1 niveau</td><td>2</td></tr>
+                        <tr><td>Stimm de concentration</td><td class="prix">30 ¢</td><td>Avantage sur les jets INT pendant 10 min ; puis 1d4 dégâts psychiques</td><td>2</td></tr>
+                        <tr><td>Lune-de-ruche (alcool distillé)</td><td class="prix">5 ¢</td><td>Annule 1 niveau de peur pendant 1 h ; ébriété</td><td>0</td></tr>
+                        <tr><td>Sérum d'Éclose</td><td class="prix">150 ¢</td><td>Tirez sur la Loterie de la chair : mutation permanente ; test de Corruption</td><td>4</td></tr>
+                        <tr><td>Dévers (drogue de mutant)</td><td class="prix">25 ¢</td><td>Mute temporairement 1 h ; ± effets secondaires (d6 sur table Mutations temporaires)</td><td>3</td></tr>
+                        <tr><td>Antitoxine</td><td class="prix">25 ¢</td><td>Annule un poison en cours</td><td>1</td></tr>
+                        <tr><td>Bouclier énergétique portatif</td><td class="prix">300 ¢</td><td>+4 CA pendant 3 rounds, puis recharge</td><td>3</td></tr>
+                        <tr><td>Bougie de coder</td><td class="prix">5 ¢</td><td>1 h de lumière tamisée, signaux</td><td>0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">5.7</span> Cybernétique</h2>
+            <div class="panier">
+                Les implants sont installés par un Médicae ou un Technoprêtre qualifié (coût d'installation = prix × 0,5). Chaque implant occupe un <span class="nom">emplacement corporel</span> — 2 maximum par personnage, <span class="nom">3 pour les Fer-Blancs</span>. Toute installation inflige 1 niveau d'épuisement. <span class="nom">Rejets cybernétiques</span> : un implant mal entretenu (jet d'Ingénierie DD 10 par repos long, ou 5 ¢ de maintenance) dysfonctionne — le MR choisit un effet : désavantage, court-circuit, ou perte temporaire de la capacité.
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Implants cybernétiques</caption>
+                    <thead>
+                        <tr><th>Implant</th><th>Prix</th><th>Effet</th><th>R</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Œil photo-rétine</td><td class="prix">200 ¢</td><td>Vision dans le noir 6", zoom ×4</td><td>2</td></tr>
+                        <tr><td>Bras-piston</td><td class="prix">250 ¢</td><td>Attaque 1d6 + FOR, brise les portes</td><td>2</td></tr>
+                        <tr><td>Plaque dermique</td><td class="prix">300 ¢</td><td>+1 CA permanent</td><td>2</td></tr>
+                        <tr><td>Filtre pulmonaire implanté</td><td class="prix">250 ¢</td><td>Immunité aux gaz et vapeurs</td><td>2</td></tr>
+                        <tr><td>Stimulateur cardiaque</td><td class="prix">400 ¢</td><td>1 fois par combat, annulez 1 niveau d'épuisement</td><td>3</td></tr>
+                        <tr><td>Jack neuronal</td><td class="prix">500 ¢</td><td>Interface avec machines (avantage piratage)</td><td>3</td></tr>
+                        <tr><td>Exo-jambes</td><td class="prix">600 ¢</td><td>Vitesse +2", saut doublé</td><td>3</td></tr>
+                        <tr><td>Port-cortex de mémoire</td><td class="prix">800 ¢</td><td>Mémoire parfaite, 2 compétences supplémentaires au repos long</td><td>4</td></tr>
+                        <tr><td>Puce d'écoute de l'Empereur</td><td class="prix">1 000 ¢</td><td>Détecte les psychiques à 12" ; test de Corruption à l'installation</td><td>4</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="psychisme">
+            <h2><span class="num">6.1</span> Pouvoirs psychiques</h2>
+            <div class="panier">
+                Un Wyrd (ou tout personnage ayant acquis un talent psychique) dépense des <span class="nom">points de Canal</span> pour lancer des pouvoirs. Chaque pouvoir a un coût, un DD de JS (8 + mod SAG + maîtrise), une portée et une durée. <span class="nom">Épreuve de Canal</span> : test d'aptitude si le pouvoir est de rang supérieur à la moitié du niveau (DD 10 + 2 × rang) ; un 1 naturel déclenche un test de Corruption. Accès par rang : 1–2 dès le niveau 1 · 3 au niveau 5 · 4 au niveau 9 · 5 au niveau 13.
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Pouvoirs psychiques</caption>
+                    <thead>
+                        <tr><th>Rang</th><th>Pouvoir</th><th>Coût</th><th>Effet</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Murmure d'emprise</td><td>1</td><td>Télépathie 12" ; ou lisez la surface de pensée d'une cible (JS SAG annule)</td></tr>
+                        <tr><td>1</td><td>Bouclier de volonté</td><td>1</td><td>Réaction : +3 CA contre 1 attaque, ou avantage à 1 JS</td></tr>
+                        <tr><td>1</td><td>Étincelle</td><td>1</td><td>1d8 psychique à 12", portable par contact</td></tr>
+                        <tr><td>1</td><td>Sens de l'Écoute</td><td>1</td><td>Détectez les créatures pensantes dans 12" pendant 1 min (aveugle au reste)</td></tr>
+                        <tr><td>2</td><td>Lame de pensée</td><td>2</td><td>Attaque psychique : 2d8 psychique, ignore les couvertures</td></tr>
+                        <tr><td>2</td><td>Voile de brume mentale</td><td>2</td><td>La cible a un désavantage à tous ses jets pendant 1 min (JS INT)</td></tr>
+                        <tr><td>2</td><td>Étreinte de plomb</td><td>2</td><td>Télékinésie : soulevez/poussez 100 kg à 6", immobilisez (JS FOR)</td></tr>
+                        <tr><td>2</td><td>Sérénité de foi</td><td>2</td><td>2 alliés récupèrent 1d8 PV et annulent un état de peur</td></tr>
+                        <tr><td>3</td><td>Fracasseur mental</td><td>3</td><td>4d8 psychique dans une zone de 2" (JS SAG, demi)</td></tr>
+                        <tr><td>3</td><td>Marionnettiste</td><td>3</td><td>Contrôlez un humanoïde faible d'esprit 1 min (JS CHA chaque tour)</td></tr>
+                        <tr><td>3</td><td>Mur d'agonie</td><td>3</td><td>Zone 4" : ennemis empoisonnés et à demi-vitesse tant qu'ils y restent</td></tr>
+                        <tr><td>3</td><td>Communion des archives</td><td>3</td><td>Interrogez un lieu/objet sur son passé récent (24 h)</td></tr>
+                        <tr><td>4</td><td>Tempête de ferraille</td><td>4</td><td>Télékinésie massive : 6d6 contondants + perforants dans un cône de 6"</td></tr>
+                        <tr><td>4</td><td>Cri de dissolution</td><td>4</td><td>6d6 psychique à 12" ; les cibles réduites à 0 deviennent poussière (effroi pour les témoins)</td></tr>
+                        <tr><td>4</td><td>Éveil du séraphin</td><td>4</td><td>+2 CA, vol 6", arme psychique 1d8 bonus pendant 1 min : Corruption automatique en fin d'effet</td></tr>
+                        <tr><td>5</td><td>Dent du Warp</td><td>6</td><td>Déchirez la réalité : 8d8 psychique dans une sphère de 4", structures détruites ; Corruption automatique</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Périls du Canal (d6, sur échec de Corruption lié au psychisme)</caption>
+                    <thead>
+                        <tr><th>d6</th><th>Péril</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Saignement des yeux : 1d6 psychique au lanceur, pouvoir annulé</td></tr>
+                        <tr><td>2</td><td>Murmure inversé : le pouvoir cible un allié au hasard</td></tr>
+                        <tr><td>3</td><td>Marche forcée : le lanceur se téléporte 1d6 × 2" dans une direction aléatoire (chute possible…)</td></tr>
+                        <tr><td>4</td><td>Voix du dehors : le lanceur hurle en langue interdite ; toutes les créatures à 4" sont terrifiées 1 round</td></tr>
+                        <tr><td>5</td><td>Marque brûlante : symbole visible de sorciérie au front. Rép −2 avec les zélotes locaux</td></tr>
+                        <tr><td>6</td><td><span class="nom">Béance</span> : fissure Warp 1 round ; d100 : 01–50 rien, 51–90 horreur mineure (CR = niveau ÷ 2), 91–00 horreur majeure (CR = niveau)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="citation">
+                « Tout pouvoir a un prix. Dans la ruche, le prix, c'est toi. »
+                <span class="attribution">— Zélote de la Basilique Basse</span>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">6.2</span> Mutations — la Loterie de la chair</h2>
+            <div class="panier tox">
+                Les Mutations sont acquises par : Ascendance Éclore (gratuite), Sérum d'Éclose (test de Corruption), classe Hybride, ou exposition aux isotopes. Chaque mutation a un rang (1 mineure, 2 majeure, 3 monstrueuse). Une mutation <span class="nom">au hasard</span> se tire sur la Loterie de la chair : dix Dons et dix Fléaux, indifféremment mélangés. Une mutation <span class="nom">choisie</span> (trait d'Éclore, Instinct mutant du Prodige, récompense du MR) se prend dans la Table des Dons. Un Fléau peut être retiré par opération de Médicae (500 ¢, jet DD 15 ; échec : le Fléau reste et inflige 1 niveau d'épuisement).
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Loterie de la chair (d20 — dons et fléaux mélangés)</caption>
+                    <thead>
+                        <tr><th>d20</th><th>Mutation</th><th>Type</th><th>Rang</th><th>Effet</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Peau de mucus</td><td class="cle-mut">Don</td><td>1</td><td>Résistance au poison ; désavantage Discrétion</td></tr>
+                        <tr><td>2</td><td>Métabolisme affamé</td><td class="cle-mut">Fléau</td><td>—</td><td>2 rations par jour ; famine : épuisement deux fois plus vite</td></tr>
+                        <tr><td>3</td><td>Œil cyclopéen</td><td class="cle-mut">Don</td><td>1</td><td>Vision dans le noir 12" ; Perception +1</td></tr>
+                        <tr><td>4</td><td>Mains tremblantes</td><td class="cle-mut">Fléau</td><td>—</td><td>Désavantage aux jets d'ATT à distance sans appui (trépied, muret)</td></tr>
+                        <tr><td>5</td><td>Branchies de conduit</td><td class="cle-mut">Don</td><td>1</td><td>Respirez l'eau polluée ; nage 6"</td></tr>
+                        <tr><td>6</td><td>Peur du vide</td><td class="cle-mut">Fléau</td><td>—</td><td>Désavantage aux JS contre l'effroi lié aux hauteurs et aux puits</td></tr>
+                        <tr><td>7</td><td>Mains adhésives</td><td class="cle-mut">Don</td><td>1</td><td>Escalade sans test ; Vol +2</td></tr>
+                        <tr><td>8</td><td>Voix de rupture</td><td class="cle-mut">Fléau</td><td>—</td><td>Impossible de chuchoter ; on vous entend à 6"</td></tr>
+                        <tr><td>9</td><td>Poumons triples</td><td class="cle-mut">Don</td><td>2</td><td>Avantage JS CON contre les gaz ; sprint +2"</td></tr>
+                        <tr><td>10</td><td>Sommeil de pierre</td><td class="cle-mut">Fléau</td><td>—</td><td>Impossible de vous réveiller avant 8 heures ; aucune veille de garde</td></tr>
+                        <tr><td>11</td><td>Bras chitineux</td><td class="cle-mut">Don</td><td>2</td><td>Attaque griffe 1d6 bonus ; objets tenus +1</td></tr>
+                        <tr><td>12</td><td>Peau suintante</td><td class="cle-mut">Fléau</td><td>—</td><td>Armures matriciées impossibles ; désavantage Vol (mains)</td></tr>
+                        <tr><td>13</td><td>Glandes de bile</td><td class="cle-mut">Don</td><td>2</td><td>Crachat acide 6" : 2d6 acide, recharge 5–6</td></tr>
+                        <tr><td>14</td><td>Os de verre</td><td class="cle-mut">Fléau</td><td>—</td><td>Vulnérabilité aux contondants ; pas d'armure lourde</td></tr>
+                        <tr><td>15</td><td>Écorce osseuse</td><td class="cle-mut">Don</td><td>2</td><td>CA naturelle 14 (sans armure) ; désavantage Discrétion</td></tr>
+                        <tr><td>16</td><td>Glandes d'alarme</td><td class="cle-mut">Fléau</td><td>—</td><td>Bêtes et chiens dressés vous repèrent avec avantage ; animaux hostiles</td></tr>
+                        <tr><td>17</td><td>Gorge sonique</td><td class="cle-mut">Don</td><td>3</td><td>Cri : cône 4", 3d6 tonnerre, assourdit (JS CON), recharge repos long</td></tr>
+                        <tr><td>18</td><td>Chair d'isotope</td><td class="cle-mut">Fléau</td><td>—</td><td>Psychiques et puces d'écoute vous détectent automatiquement à 12"</td></tr>
+                        <tr><td>19</td><td>Régénération atrophiée</td><td class="cle-mut">Don</td><td>3</td><td>1d6 PV par round si sous la moitié ; épuisement après combat (1 niv)</td></tr>
+                        <tr><td>20</td><td>Stigmates de Couvée</td><td class="cle-mut">Fléau</td><td>—</td><td>Les zélotes vous identifient au premier regard : Rép −2 chez eux</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Table des Dons (d10 — mutations choisies)</caption>
+                    <thead>
+                        <tr><th>d10</th><th>Don</th><th>Rang</th><th>Effet</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Dents de scorie</td><td>1</td><td>Morsure 1d6 ; dévorez les rations avariées sans malus</td></tr>
+                        <tr><td>2</td><td>Peau photosynthétique</td><td>1</td><td>Moitié des rations nécessaires sous lumière artificielle</td></tr>
+                        <tr><td>3</td><td>Musculature démentielle</td><td>2</td><td>FOR +2 portage et athlétisme ; +1d4 dégâts CaC</td></tr>
+                        <tr><td>4</td><td>Yeux multiples</td><td>2</td><td>Vous ne pouvez pas être aveuglé ; avantage Perception visuelle</td></tr>
+                        <tr><td>5</td><td>Sang corrosif</td><td>2</td><td>Les attaques reçues en CaC infligent 1d4 acide à l'agresseur</td></tr>
+                        <tr><td>6</td><td>Métabolisme de dévoreur</td><td>2</td><td>Mangez n'importe quoi organique : 1d4 PV par repas immonde</td></tr>
+                        <tr><td>7</td><td>Peau de caméléon</td><td>2</td><td>Avantage Discrétion si immobile ; +4 si caché</td></tr>
+                        <tr><td>8</td><td>Seconde tête</td><td>3</td><td>Avantage JS INT, SAG et CHA ; deux langues ; maux de tête narratifs</td></tr>
+                        <tr><td>9</td><td>Membre préhensile caudal</td><td>3</td><td>Queue : attaque bonus 1d6 ; tenez-vous aux catwalks sans mains</td></tr>
+                        <tr><td>10</td><td>Chair déphasée</td><td>3</td><td>1 fois par combat : ignorez une attaque ; Corruption à chaque usage</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">6.3</span> Corruption — l'échelle</h2>
+            <div class="panier">
+                La Corruption mesure l'usure physique et spirituelle du personnage, de 0 à 6. Elle s'accumule par : pouvoirs de rang 4+, 1 naturel sur les épreuves de Canal, Sérum d'Éclose, artefacts Warp, radiations des Profondeurs. <span class="nom">Test de Corruption</span> : 1d20 + mod CON contre DD 10 + points actuels ; un échec ajoute 1 point. Le seuil 6 = dissolution. Rachat : 100 ¢ de traitements (trépanation, dialyse de foi, jeûne de l'Écoute) ET un mois de jeu, ou un miracle narratif ; 1 point par niveau maximum — les stades 4 et 5 sont <span class="nom">non rachetables</span>. Radiations des Profondeurs : JS CON par heure (DD 12, 15, 18 selon la zone) ; échec : 1d4 dégâts et 1 point de <span class="nom">Dose</span> ; à 3 Doses, test de Corruption à désavantage. Les Doses disparaissent après une semaine de traitement (50 ¢).
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Échelle de Corruption (effets cumulatifs)</caption>
+                    <thead>
+                        <tr><th>Points</th><th>Stade</th><th>Effets</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td>Pur (ou presque)</td><td>Rien. Pour l'instant.</td></tr>
+                        <tr><td>1</td><td>Marqué</td><td>Yeux luisants, tic, murmures. Rép −1 chez les zélotes.</td></tr>
+                        <tr><td>2</td><td>Entaché</td><td>Vous parlez parfois pendant votre sommeil. La Corruption ne réduit jamais le coût des pouvoirs.</td></tr>
+                        <tr><td>3</td><td>Transformé</td><td>Une mutation visible s'impose (tirez sur la Loterie de la chair). +1 dégât sur pouvoirs et attaques naturelles. Rép −2 zélotes.</td></tr>
+                        <tr><td>4</td><td>Défiguré</td><td>Une mutation majeure s'ajoute. JS CHA avec les civils à désavantage. Les psychiques vous sentent à 12".</td></tr>
+                        <tr><td>5</td><td>Frontière de l'abomination</td><td>+2 dés d'attaque psychique/naturelle. Plus aucun soin de médecine ordinaire (soins moitié). Chaque jour sans test de Corruption réussi : risque de perdre le contrôle (le MR joue votre personnage 1 scène).</td></tr>
+                        <tr><td>6</td><td>Dissous</td><td>Le personnage devient une <span class="nom">Abomination de la ruche</span> sous contrôle du MR. Adieu.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site">
+        <div class="pied">
+            <span>CENDRES & ACIER — Parties V & VI / IX</span>
+            <span class="sceau">TOUT POUVOIR A UN PRIX</span>
+        </div>
+    </footer>
+</body>
+</html>

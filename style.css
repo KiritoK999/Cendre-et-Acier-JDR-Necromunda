@@ -1,0 +1,482 @@
+/* ==========================================================================
+   CENDRES & ACIER — Feuille de style commune au site
+   Colorimétrie Necromunda : noir de suie, jaune hazard, rouille, sang séché.
+   Le site est 100% HTML + CSS : aucun script.
+   À enregistrer sous le nom : style.css (dans le même dossier que les pages)
+   ========================================================================== */
+
+/* Variables : la palette de la Ruche */
+:root {
+  --suint: #12110d;        /* fond principal : noir de suie        */
+  --caniveau: #1b1913;     /* fond secondaire : tôle oxydée        */
+  --tole: #241f16;         /* panneaux : tôle peinte écaillée      */
+  --calamine: #322a1c;     /* bordures de panneaux                 */
+  --os: #e7dfcc;           /* texte : blanc d'os                   */
+  --cendre: #9b9180;       /* texte secondaire : poussière         */
+  --hazard: #e8a91c;       /* jaune hazard des catwalks            */
+  --rouille: #c25a1e;      /* orange rouille : accent principal    */
+  --sang: #9e2b20;         /* rouge sang séché : danger            */
+  --vert-de-tox: #7f8a3a;  /* vert toxique : mutations, poisons    */
+  --rail: 2px solid #3a3123;
+}
+
+/* Squelette */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--suint);
+  color: var(--os);
+  font-family: "Bahnschrift", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+/* Bandeau de chantier en haut de chaque page */
+.hazard-top {
+  height: 10px;
+  background: var(--hazard);
+  border-bottom: 2px solid #000;
+}
+
+/* En-tête et navigation */
+header.site {
+  background: #191712;
+  border-bottom: var(--rail);
+  padding: 0 20px;
+}
+
+.titre-site {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 14px;
+  padding: 18px 0 8px;
+  flex-wrap: wrap;
+}
+
+.titre-site h1 {
+  margin: 0;
+  font-size: 1.45em;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--hazard);
+}
+
+.titre-site .sigille {
+  display: inline-block;
+  background: var(--rouille);
+  color: #0f0e0a;
+  font-weight: bold;
+  padding: 1px 9px;
+  letter-spacing: 0.2em;
+  font-size: 0.8em;
+}
+
+.sous-titre {
+  margin: 0;
+  padding-bottom: 12px;
+  color: var(--cendre);
+  font-size: 0.85em;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Menu principal */
+nav.menu-principal ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+  margin: 0;
+  padding: 0;
+  border-top: var(--rail);
+}
+
+nav.menu-principal a {
+  display: block;
+  padding: 10px 14px;
+  color: var(--os);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.78em;
+  letter-spacing: 0.12em;
+}
+
+nav.menu-principal a:hover {
+  color: var(--hazard);
+  background: #201c13;
+}
+
+/* Page courante : rivet jaune hazard */
+nav.menu-principal a.actif {
+  color: #100e09;
+  background: var(--hazard);
+  font-weight: bold;
+}
+
+/* Contenu principal */
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 26px 20px 40px;
+}
+
+section {
+  margin: 34px 0;
+}
+
+h2 {
+  color: var(--os);
+  font-size: 1.35em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-left: 6px solid var(--rouille);
+  padding-left: 12px;
+  margin: 0 0 6px;
+}
+
+h2 .num {
+  color: var(--rouille);
+  margin-right: 6px;
+}
+
+h3 {
+  color: var(--hazard);
+  font-size: 1.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 18px 0 8px;
+}
+
+h4 {
+  color: var(--cendre);
+  text-transform: uppercase;
+  font-size: 0.82em;
+  letter-spacing: 0.16em;
+  margin: 14px 0 4px;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed var(--calamine);
+  margin: 26px 0;
+}
+
+/* Citations gravées à l'acide */
+.citation {
+  margin: 18px 0;
+  padding: 12px 18px;
+  background: #191610;
+  border-left: 4px solid var(--hazard);
+  font-style: italic;
+  color: var(--os);
+}
+
+.citation .attribution {
+  display: block;
+  margin-top: 4px;
+  font-style: normal;
+  font-size: 0.8em;
+  color: var(--cendre);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Blocs d'information */
+.panier {
+  background: var(--tole);
+  border: 1px solid var(--calamine);
+  border-top: 3px solid var(--rouille);
+  padding: 14px 18px;
+  margin: 14px 0;
+}
+
+.panier.jaune { border-top-color: var(--hazard); }
+.panier.sang  { border-top-color: var(--sang); }
+.panier.tox   { border-top-color: var(--vert-de-tox); }
+
+/* Listes à rivets */
+ul.rivets {
+  list-style: none;
+  padding-left: 4px;
+  margin: 10px 0;
+}
+
+ul.rivets li {
+  padding: 4px 0 4px 22px;
+  position: relative;
+}
+
+ul.rivets li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--rouille);
+}
+
+/* Nom de règle : rivet jaune hazard */
+span.nom {
+  color: var(--hazard);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Listes numérotées : procédures de Guilde */
+ol.procedure {
+  counter-reset: marche;
+  list-style: none;
+  padding-left: 4px;
+}
+
+ol.procedure li {
+  counter-increment: marche;
+  padding: 7px 0 7px 44px;
+  position: relative;
+  border-bottom: 1px dotted #3a3123;
+}
+
+ol.procedure li::before {
+  content: counter(marche, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 30px;
+  height: 24px;
+  text-align: center;
+  background: #0f0e0a;
+  color: var(--hazard);
+  border: 1px solid var(--calamine);
+  font-weight: bold;
+  line-height: 22px;
+}
+
+/* Grilles de cartes */
+.grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin: 18px 0;
+}
+
+.carte {
+  background: var(--tole);
+  border: 1px solid var(--calamine);
+  border-left: 4px solid var(--rouille);
+  padding: 14px 16px;
+}
+
+.carte h3 {
+  margin: 0 0 2px;
+  font-size: 1em;
+}
+
+.carte .metier {
+  color: var(--cendre);
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 10px;
+}
+
+.carte .metier .accent { color: var(--hazard); }
+
+/* Lignes clé / valeur façon fiche technique */
+.fiche-tech { margin: 8px 0; }
+
+.fiche-tech .ligne {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px dotted #3a3123;
+  padding: 3px 0;
+  font-size: 0.9em;
+}
+
+.fiche-tech .ligne .cle { color: var(--cendre); text-transform: uppercase; font-size: 0.85em; letter-spacing: 0.08em; }
+.fiche-tech .ligne .val { color: var(--os); text-align: right; }
+.fiche-tech .ligne .val.jaune { color: var(--hazard); font-weight: bold; }
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: 0.72em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid var(--calamine);
+  color: var(--cendre);
+  margin: 0 4px 4px 0;
+}
+
+.badge.hazard  { background: var(--hazard); color: #100e09; font-weight: bold; }
+.badge.rouille { background: var(--rouille); color: #100e09; font-weight: bold; }
+.badge.sang     { background: var(--sang); color: var(--os); font-weight: bold; }
+.badge.tox      { background: var(--vert-de-tox); color: #10120a; font-weight: bold; }
+
+/* Texte supprimé : ce que la Ruche nie */
+del { color: #6e6557; text-decoration-color: var(--sang); }
+ins { text-decoration: none; color: var(--hazard); }
+
+/* Liens dans le texte — uniformisés sur le jaune hazard */
+a.lien-texte, main p a, .carte a {
+  color: var(--hazard);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--hazard);
+}
+
+a.lien-texte:hover { color: var(--rouille); border-bottom-color: var(--rouille); }
+
+/* Héros de la page d'accueil */
+.heros {
+  border: 1px solid var(--calamine);
+  border-top: 6px solid var(--hazard);
+  background: #201b12;
+  padding: 30px 26px;
+  margin-top: 8px;
+}
+
+.heros h2 {
+  border-left: none;
+  padding-left: 0;
+  font-size: 2em;
+  margin-bottom: 4px;
+  color: var(--os);
+}
+
+.heros .accroche {
+  color: var(--hazard);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.8em;
+  margin: 0 0 14px;
+}
+
+/* Colonnes de résumé */
+.colonnes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+}
+
+/* Sommaire en cartes navigables */
+.grille-nav { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+
+.grille-nav a {
+  display: block;
+  background: var(--tole);
+  border: 1px solid var(--calamine);
+  color: var(--os);
+  text-decoration: none;
+  padding: 16px 14px 12px;
+}
+
+.grille-nav a:hover {
+  border-color: var(--hazard);
+  color: var(--hazard);
+}
+
+.grille-nav .num-partie {
+  display: block;
+  color: var(--rouille);
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 0.75em;
+}
+
+.grille-nav .nom-partie {
+  display: block;
+  color: var(--hazard);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+.grille-nav .desc-partie {
+  display: block;
+  color: var(--cendre);
+  font-size: 0.85em;
+}
+
+/* Pied de page */
+footer.site {
+  border-top: var(--rail);
+  background: #0e0d0a;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer.site .pied {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--cendre);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+footer.site .pied .sceau { color: var(--rouille); font-weight: bold; }
+
+/* Tableaux de Guilde */
+.tableau-wrap { overflow-x: auto; margin: 16px 0; }
+
+table.tableau {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--caniveau);
+  font-size: 0.9em;
+}
+
+table.tableau caption {
+  caption-side: top;
+  text-align: left;
+  color: var(--hazard);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8em;
+  padding-bottom: 8px;
+}
+
+table.tableau th {
+  background: #0f0e0a;
+  color: var(--hazard);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8em;
+  padding: 8px 10px;
+  border: 1px solid var(--calamine);
+  text-align: left;
+}
+
+table.tableau td {
+  padding: 6px 10px;
+  border: 1px solid var(--calamine);
+  color: var(--os);
+  vertical-align: top;
+}
+
+table.tableau tbody tr:nth-child(even) td { background: #1e1a12; }
+
+table.tableau td.prix {
+  color: var(--hazard);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+table.tableau td.cle-mut {
+  color: var(--cendre);
+  text-transform: uppercase;
+  font-size: 0.85em;
+}

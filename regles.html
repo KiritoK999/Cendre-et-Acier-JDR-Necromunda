@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CENDRES & ACIER — Partie I : moteur d20, combat, repos et épuisement, économie de la ruche, création de personnage et progression.">
+    <title>Règles de base — CENDRES & ACIER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hazard-top"></div>
+    <header class="site">
+        <div class="titre-site">
+            <span class="sigille">C&A</span>
+            <h1>Cendres & Acier</h1>
+        </div>
+        <div class="sous-titre">Partie I — Introduction et règles de base</div>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="regles.html" class="actif">Règles de base</a></li>
+                <li><a href="peuples.html">Peuples</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="historiques.html">Ancrages</a></li>
+                <li><a href="equipement.html">Équipement</a></li>
+                <li><a href="dangers.html">Dangers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2><span class="num">1.2</span> Le moteur de jeu</h2>
+            <div class="panier">
+                CENDRES & ACIER repose sur le moteur d20 : jet d'ATT contre une CA, JS contre des DD, maîtrise, avantage / désavantage.
+                <hr>
+                <span class="badge hazard">JS</span> jet de sauvegarde
+                <span class="badge hazard">DD</span> degré de difficulté
+                <span class="badge hazard">ATT</span> jet d'attaque
+                <span class="badge hazard">CA</span> classe d'armure
+                <span class="badge hazard">PV</span> points de vie
+                <span class="badge hazard">CaC</span> corps-à-corps
+            </div>
+            <h3>Les six caractéristiques dans la Ruche</h3>
+            <div class="grille">
+                <div class="carte">
+                    <h3>FOR — Force</h3>
+                    <div class="metier">Travailler dans les forges, briser les portes de sas, lutter contre un chien-de-slague.</div>
+                </div>
+                <div class="carte">
+                    <h3>DEX — Dextérité</h3>
+                    <div class="metier">Éviter les éboulements, viser, se faufiler entre les foules, esquiver les éjectas.</div>
+                </div>
+                <div class="carte">
+                    <h3>CON — Constitution</h3>
+                    <div class="metier">Respirer l'air vicié, digérer les rations-champignons, résister aux toxines.</div>
+                </div>
+                <div class="carte">
+                    <h3>INT — Intelligence</h3>
+                    <div class="metier">Réparer un générateur, lire un schem, connaître les plans des vieux niveaux.</div>
+                </div>
+                <div class="carte">
+                    <h3>SAG — Sagesse</h3>
+                    <div class="metier">Repérer le guet-apens, flairer l'informateur, percevoir la croyance et le mensonge.</div>
+                </div>
+                <div class="carte">
+                    <h3>CHA — Charisme</h3>
+                    <div class="metier">Impressionner un chef de gang, négocier un contrat, prêcher l'Écoute.</div>
+                </div>
+            </div>
+            <h3>Compétences de la Ruche</h3>
+            <div class="panier jaune">
+                <ul class="rivets">
+                    <li><span class="nom">Acrobatie</span> (DEX) — Sauts, chutes, équilibre</li>
+                    <li><span class="nom">Arcanes</span> (INT) — Savoir interdit, technologies archaïques</li>
+                    <li><span class="nom">Athlétisme</span> (FOR) — Grimper, lutter, briser</li>
+                    <li><span class="nom">Conduite</span> (DEX) — Véhicules, compétence de spécialité</li>
+                    <li><span class="nom">Discrétion</span> (DEX) — Se cacher, se déplacer en silence</li>
+                    <li><span class="nom">Escamotage</span> (DEX) — Poches, serrures</li>
+                    <li><span class="nom">Histoire</span> (INT) — La ruche, les Maisons, les archives</li>
+                    <li><span class="nom">Intimidation</span> (CHA) — Intimider, menacer, impressionner</li>
+                    <li><span class="nom">Ingénierie</span> (INT) — Réparer, démonter, comprendre une machine</li>
+                    <li><span class="nom">Investigation</span> (INT) — Déduire, reconstituer, fouiller</li>
+                    <li><span class="nom">Médecine</span> (SAG) — Soigner, diagnostiquer, autopsier</li>
+                    <li><span class="nom">Nature</span> (SAG) — Faune et flore de la ruche et des Cendres</li>
+                    <li><span class="nom">Perception</span> (SAG) — Remarquer, guetter, sentir</li>
+                    <li><span class="nom">Persuasion</span> (CHA) — Négocier, convaincre, marchander</li>
+                    <li><span class="nom">Religion</span> (SAG) — Culte de l'Empereur-Dieu, rites, hérésies</li>
+                    <li><span class="nom">Ruse</span> (INT) — Main-d'œuvre, cuisine, bricolage de survie</li>
+                    <li><span class="nom">Survie</span> (SAG) — S'orienter, trouver eau, nourriture, abri</li>
+                    <li><span class="nom">Tromperie</span> (CHA) — Mentir, se déguiser, sembler</li>
+                </ul>
+            </div>
+            <h3>Bonus de maîtrise</h3>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <thead>
+                        <tr><th>Niveaux</th><th>Bonus de maîtrise</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1 – 4</td><td>+2</td></tr>
+                        <tr><td>5 – 8</td><td>+3</td></tr>
+                        <tr><td>9 – 12</td><td>+4</td></tr>
+                        <tr><td>13 – 16</td><td>+5</td></tr>
+                        <tr><td>17 – 20</td><td>+6</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2><span class="num">1.3</span> Combat</h2>
+            <div class="panier sang">
+                <h3>Initiative d'équipe</h3>
+                <ul class="rivets">
+                    <li>Chaque équipe lance <span class="nom">1d20 + DEX du chef d'équipe</span> (en général le plus haut DEX).</li>
+                    <li>Toute l'équipe agit sur le même compte ; <span class="nom">l'ordre interne est libre</span> et peut changer à chaque tour.</li>
+                    <li>Surprise : l'équipe surprise agit après toutes les autres, avec un désavantage sur ses attaques pendant son premier tour.</li>
+                    <li>Égalité : on rejoue entre les équipes concernées.</li>
+                </ul>
+            </div>
+
+            <div class="panier">
+                <h3>Mesures : la table comme champ de bataille</h3>
+                <ul class="rivets">
+                    <li>Toutes les distances en <span class="nom">pouces</span> ("), au mètre ruban ou à la règle : 1" = 1,5 mètre.</li>
+                    <li>Un humain moyen se déplace de <span class="nom">6"</span> par round.</li>
+                    <li>Grenade = rayon 2" · lance-flamme = cône de 4" · tir nourri en zone = largeur 2".</li>
+                    <li>Bataille en trois dimensions : tir contre une cible en contrebas = désavantage.</li>
+                </ul>
+            </div>
+            <div class="panier">
+                <h3>Tir, munitions et couvert</h3>
+                <ul class="rivets">
+                    <li>Chaque attaque à distance consomme <span class="nom">1 munition</span> (2 de plus pour un tir nourri).</li>
+                    <li>Recharger : <span class="nom">action bonus</span> (chargeur), <span class="nom">action</span> (armes lourdes, barillets, poudre).</li>
+                    <li>Demi-couvert : <span class="nom">+2 CA et +2 JS DEX</span> — trois-quarts couvert : <span class="nom">+5 CA et +5 JS DEX</span> — couvert total : non ciblable, vulnérable aux zones.</li>
+                    <li>Tir nourri (Automatique) : 2 munitions de plus pour un dé de dégâts supplémentaire.</li>
+                    <li>Surchauffe (Énergétique) : 1d4 après chaque attaque ; sur un 1, refroidissement obligatoire.</li>
+                    <li>Règle de <span class="nom">Décharge</span> : un 1 naturel au tir dans un tunnel = hasard de zone (vapeur, câbles sous tension, chute de débris).</li>
+                    <li>Armes improvisées (barre de fer, clé à pipe, tuyau) : <span class="nom">1d4 + FOR</span> ; tout le monde les maîtrise.</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2><span class="num">1.4</span> Repos et épuisement</h2>
+            <div class="grille">
+                <div class="carte">
+                    <h3>Repos court</h3>
+                    <div class="metier">8 heures de travail nocturne</div>
+                    <div>Exige un lieu relativement sûr : sceller une porte, monter la garde, étouffer les lumières. En zone hostile : jet de Sagesse (Survie) DD 12, sinon il s'agit d'un repos haché (la moitié des bénéfices).</div>
+                </div>
+                <div class="carte">
+                    <h3>Repos long</h3>
+                    <div class="metier">Une rotation complète</div>
+                    <div>Un lit dans un comptoir de Guilde (10 à 100 ¢) ou une cachette réellement sûre.</div>
+                </div>
+                <div class="carte">
+                    <h3>Épuisement</h3>
+                    <div class="metier">Punitif, donc rare</div>
+                    <div>Aucune capacité n'inflige jamais plus d'un seul niveau à la fois, plusieurs sources dans le même tour = un seul niveau subi.</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2><span class="num">1.5</span> Économie de la Ruche</h2>
+            <div class="grille">
+                <div class="carte">
+                    <h3>Crédits <span class="badge rouille">¢</span></h3>
+                    <div class="metier">La monnaie des guildes</div>
+                    <div>Achat d'équipement, pots-de-vin, soins. L'eau, la nourriture et l'air sont des ressources.</div>
+                </div>
+                <div class="carte">
+                    <h3>Dette <span class="badge sang">▲</span></h3>
+                    <div class="metier">L'engrenage narratif</div>
+                    <div>Tant qu'elle n'est pas soldée, les collecteurs reviennent (1–2 sur 1d6 après chaque repos long). Une dette ancienne devient Réputation négative, puis contrat ouvert.</div>
+                </div>
+                <div class="carte">
+                    <h3>Réputation <span class="badge hazard">||</span></h3>
+                    <div class="metier">Par faction : de −5 (Marqué) à +5 (Vénéré)</div>
+                    <div>S'ajoute aux jets de Charisme face à la faction. +5 : on vous craint, on vous doit des faveurs. −5 : contrat ouvert sur votre tête dans le district.</div>
+                </div>
+            </div>
+            <div class="panier jaune">
+                <h4>Rareté et licences</h4>
+                <ul class="rivets">
+                    <li><span class="nom">Rareté 0 à 5</span> : 0 = omniprésent · 5 = introuvable sans contact au plus haut niveau.</li>
+                    <li>Achat de rareté 3+ : jet de Charisme (Réputation) <span class="nom">DD 12 + Rareté</span>.</li>
+                    <li>Une arme lourde sans <span class="nom">licence de Guilde</span> : amendes, confiscation, contrat sur la tête selon le district.</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2><span class="num">1.6</span> Création de personnage, étape par étape</h2>
+            <ol class="procedure">
+                <li><span class="nom">Origine</span> — choisissez votre Peuple (Ascendance) (Partie II) : bonus de caractéristiques, vitesse, traits.</li>
+                <li><span class="nom">Classe</span> — le métier-destin (Partie III) : dé de vie, maîtrises, capacités.</li>
+                <li><span class="nom">Historique</span> — votre Ancrage (Partie IV) : +1 de caractéristiques, équipement et Prouesse de quartier.</li>
+                <li><span class="nom">Caractéristiques</span> — achat de points (27) ou 4d6 en gardant les 3 meilleurs.</li>
+                <li><span class="nom">Faction</span> — le gang, la guilde, la maison mineure ou le culte à qui vous devez quelque chose (Réputation +1, Dette de 50 ¢).</li>
+                <li><span class="nom">Équipement</span> — paquetage de classe et d'Ancrage, plus 2d4 × 10 crédits.</li>
+                <li><span class="nom">Détails</span> — surnom de ruche, cicatrices, tics, tabac, cachet de prière.</li>
+                <li><span class="nom">L'Écoute</span> — croyez, méprenez, ou ne pensez jamais à l'Empereur-Dieu.</li>
+            </ol>
+        </section>
+        <hr>
+        <section>
+            <h2><span class="num">1.7</span> Progression (expérience)</h2>
+            <div class="panier">
+                Système d'XP standard du d20 : chaque créature vaincue, neutralisée, évitée ou retournée rapporte une valeur fixe selon son CR, divisée entre les personnages. Un objectif de contrat rapporte l'équivalent d'une rencontre facile du niveau du groupe. Variante gang : des jalons (un niveau par contrat majeur réussi, deux par arc de mini-campagne).
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>Seuils d'expérience par niveau</caption>
+                    <thead>
+                        <tr><th>Niveau</th><th>XP totale</th><th>Niveau</th><th>XP totale</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td class="prix">0</td><td>11</td><td class="prix">85 000</td></tr>
+                        <tr><td>2</td><td class="prix">300</td><td>12</td><td class="prix">100 000</td></tr>
+                        <tr><td>3</td><td class="prix">900</td><td>13</td><td class="prix">120 000</td></tr>
+                        <tr><td>4</td><td class="prix">2 700</td><td>14</td><td class="prix">140 000</td></tr>
+                        <tr><td>5</td><td class="prix">6 500</td><td>15</td><td class="prix">165 000</td></tr>
+                        <tr><td>6</td><td class="prix">14 000</td><td>16</td><td class="prix">195 000</td></tr>
+                        <tr><td>7</td><td class="prix">23 000</td><td>17</td><td class="prix">225 000</td></tr>
+                        <tr><td>8</td><td class="prix">34 000</td><td>18</td><td class="prix">265 000</td></tr>
+                        <tr><td>9</td><td class="prix">48 000</td><td>19</td><td class="prix">305 000</td></tr>
+                        <tr><td>10</td><td class="prix">64 000</td><td>20</td><td class="prix">355 000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tableau-wrap">
+                <table class="tableau">
+                    <caption>XP d'une rencontre (par CR, divisée entre les personnages)</caption>
+                    <thead>
+                        <tr><th>CR</th><th>XP</th><th>CR</th><th>XP</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>0</td><td class="prix">10</td><td>9</td><td class="prix">5 000</td></tr>
+                        <tr><td>1/8</td><td class="prix">25</td><td>10</td><td class="prix">5 900</td></tr>
+                        <tr><td>1/4</td><td class="prix">50</td><td>11</td><td class="prix">7 200</td></tr>
+                        <tr><td>1/2</td><td class="prix">100</td><td>12</td><td class="prix">8 400</td></tr>
+                        <tr><td>1</td><td class="prix">200</td><td>13</td><td class="prix">10 000</td></tr>
+                        <tr><td>2</td><td class="prix">450</td><td>14</td><td class="prix">11 500</td></tr>
+                        <tr><td>3</td><td class="prix">700</td><td>15</td><td class="prix">13 000</td></tr>
+                        <tr><td>4</td><td class="prix">1 100</td><td>16</td><td class="prix">15 000</td></tr>
+                        <tr><td>5</td><td class="prix">1 800</td><td>17</td><td class="prix">18 000</td></tr>
+                        <tr><td>6</td><td class="prix">2 300</td><td>18</td><td class="prix">20 000</td></tr>
+                        <tr><td>7</td><td class="prix">2 900</td><td>19</td><td class="prix">22 000</td></tr>
+                        <tr><td>8</td><td class="prix">3 900</td><td>20</td><td class="prix">25 000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="panier jaune">
+                <ul class="rivets">
+                    <li><span class="nom">XP de contrat</span> : un objectif accompli rapporte l'équivalent d'une rencontre facile du niveau du groupe (≈ 25 % du seuil du niveau suivant).</li>
+                    <li><span class="nom">Variante jalons</span> : un niveau par contrat majeur réussi, deux par arc de la mini-campagne.</li>
+                    <li><span class="nom">Améliorations</span> : aux niveaux 4, 8, 12, 16 et 19 — +2 dans une caractéristique, ou +1 dans deux, ou une Prouesse (1.8).</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="site">
+        <div class="pied">
+            <span>CENDRES & ACIER — Partie I / IX</span>
+            <span class="sceau">CHAQUE CRÉDIT EST COMPTÉ</span>
+        </div>
+    </footer>
+</body>
+</html>
