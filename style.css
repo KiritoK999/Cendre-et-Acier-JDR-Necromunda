@@ -406,6 +406,37 @@ a.lien-texte:hover { color: var(--rouille); border-bottom-color: var(--rouille);
   font-size: 0.85em;
 }
 
+/* Boutons d'ancres : navigation interne de page */
+ul.ancres {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+ul.ancres a {
+  display: inline-block;
+  padding: 7px 13px;
+  background: var(--tole);
+  border: 1px solid var(--calamine);
+  border-top: 3px solid var(--rouille);
+  color: var(--os);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.74em;
+  letter-spacing: 0.12em;
+}
+
+ul.ancres a:hover {
+  background: var(--hazard);
+  border-color: var(--hazard);
+  color: #100e09;
+  font-weight: bold;
+}
+
 /* Pied de page */
 footer.site {
   border-top: var(--rail);
